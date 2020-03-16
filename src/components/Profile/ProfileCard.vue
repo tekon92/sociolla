@@ -9,7 +9,7 @@
             src="https://randomuser.me/api/portraits/men/1.jpg"
             class="w-10 h-10 block rounded object-cover object-top"
           />
-          <div class="text-indigo-600 font-medium ml-3">Holden Caulfield</div>
+          <div class="text-indigo-600 font-medium ml-3">{{ name }}</div>
           <button
             class="bg-indigo-100 text-indigo-400 ml-auto w-8 h-8 flex items-center justify-center rounded"
           >
@@ -26,8 +26,8 @@
             </svg>
           </button>
         </div>
-        <h1 class="font-medium text-lg mt-6">Contact List</h1>
-        <p class="text-gray-600 text-sm">Fingerstache godard blog, cornhole meh hoodie</p>
+        <h1 class="font-medium text-lg mt-2">{{ title }}</h1>
+        <p class="text-gray-600 text-sm">{{ description }}</p>
         <div class="mt-6 flex">
           <button
             class="bg-indigo-500 text-white py-2 text-sm px-3 rounded focus:outline-none"
@@ -66,6 +66,7 @@ export default {
   props: {
     id: Number,
     name: String,
+    title: String,
     avatar: {
       type: String,
       default: 'ttp://i.pravatar.cc/300'

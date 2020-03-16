@@ -5,6 +5,7 @@ import Login from '../views/Login'
 import Register from '../views/Register'
 import Developer from '../views/ProfileAll'
 import SingleProfile from '../views/SingleProfile'
+import Jobs from '../views/Jobs'
 
 Vue.use(VueRouter)
 
@@ -25,9 +26,14 @@ const routes = [
     component: Register
   },
   {
-    path: '/Developer',
+    path: '/developer',
     name: 'Developer',
     component: Developer
+  },
+  {
+    path: '/jobs',
+    name: 'Jobs',
+    component: Jobs
   },
   {
     path: '/Single',

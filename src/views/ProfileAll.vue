@@ -13,6 +13,7 @@
     <profile-card
       v-for="profile in profiles"
       :key="profile.id"
+      :title="profile.title"
       :name="profile.name"
       :description="profile.description"
       :id="profile.id"
@@ -29,24 +30,29 @@ export default {
   components: {
     ProfileCard
   },
+  computed: {
+    profiles () {
+      return this.$store.getters.profiles
+    }
+  },
   data () {
     return {
-      profiles: [
-        {
-          id: 1,
-          name: 'Rian',
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
-          avatar: 'http://i.pravatar.cc/300'
-        },
-        {
-          id: 2,
-          name: 'Qdut',
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
-          avatar: 'http://i.pravatar.cc/300'
-        }
-      ]
+      // profiles: [
+      //   {
+      //     id: 1,
+      //     name: 'Rian',
+      //     description:
+      //       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
+      //     avatar: 'http://i.pravatar.cc/300'
+      //   },
+      //   {
+      //     id: 2,
+      //     name: 'Qdut',
+      //     description:
+      //       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
+      //     avatar: 'http://i.pravatar.cc/300'
+      //   }
+      // ]
     }
   }
 }
