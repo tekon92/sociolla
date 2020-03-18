@@ -1,5 +1,6 @@
 <template>
-  <div class="max-w-4xl px-10 py-6 bg-white rounded-lg shadow-md">
+  <div class="bg-white">
+    <div class="max-w-4xl px-10 py-6 bg-gray-100 rounded-lg shadow-md mt-5" v-for="job in 2" :key="job.id">
     <div class="flex justify-between items-center">
       <span class="font-light text-gray-600">mar 10, 2019</span>
       <a
@@ -29,6 +30,7 @@
         </a>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
