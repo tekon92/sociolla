@@ -1,34 +1,24 @@
 <template>
-  <div class="bg-white">
-    <div class="max-w-4xl px-10 py-6 bg-gray-100 rounded-lg shadow-md mt-5" v-for="job in 2" :key="job.id">
-    <div class="flex justify-between items-center">
-      <span class="font-light text-gray-600">mar 10, 2019</span>
-      <a
-        class="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500"
-        href="#"
-      >Design</a>
-    </div>
-    <div class="mt-2">
-      <a
-        class="text-2xl text-gray-700 font-bold hover:text-gray-600"
-        href="#"
-      >Accessibility tools for designers and developers</a>
-      <p
-        class="mt-2 text-gray-600"
-      >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
-    </div>
-    <div class="flex justify-between items-center mt-4">
-      <a class="text-blue-600 hover:underline" href="#">Read more</a>
-      <div>
-        <a class="flex items-center" href="#">
-          <img
-            class="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block"
-            src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=373&q=80"
-            alt="avatar"
-          />
-          <h1 class="text-gray-700 font-bold">Khatab wedaa</h1>
-        </a>
+  <div class="overflow-auto flex-grow">
+    <div class="bg-gray-100 px-8 py-6 flex items-center border-b border-gray-300">
+      <!-- <input type="checkbox" /> -->
+      <div class="flex ml-4">
+        <img
+          src="https://randomuser.me/api/portraits/women/44.jpg"
+          class="w-10 h-10 object-cover rounded object-top"
+        />
+        <div class="flex flex-col pl-4">
+          <h2 class="font-medium text-sm">Google.com</h2>
+          <h3 class="text-gray-500 text-sm">Management Consultant</h3>
+        </div>
       </div>
+      <!-- <div class="flex" v-for="tag in 3" :key="tag.id">
+          <a
+            class="px-1 bg-gray-600 text-gray-100 text-sm rounded hover:bg-gray-500 ml-2"
+            href="#"
+          >Design</a>
+        </div> -->
+      <button class="bg-indigo-500 hover:bg-blue-700 items-center rounded ml-auto py-2 px-4 text-white">Apply</button>
     </div>
   </div>
   </div>
