@@ -22,8 +22,8 @@ export default {
       links: [
         { id: 1, link: 'developer', name: 'Developer' },
         { id: 2, link: 'jobs', name: 'Jobs' },
-        { id: 2, link: 'register', name: 'Register' },
-        { id: 3, link: 'login', name: 'Login' }
+        { id: 3, link: 'register', name: 'Register' },
+        { id: 4, link: 'login', name: 'Login' }
       ]
     }
   }
