@@ -6,6 +6,9 @@ import Register from '../views/Register'
 import Developer from '../views/ProfileAll'
 import SingleProfile from '../views/SingleProfile'
 import Jobs from '../views/Jobs'
+import Dashboard from '../views/Dashboard'
+import SingleJob from '../views/SingleJob'
+import SearchJob from '../views/SearchJob'
 
 Vue.use(VueRouter)
 
@@ -36,6 +39,16 @@ const routes = [
     component: Jobs
   },
   {
+    path: '/jobs/:id',
+    name: 'SingleJob',
+    component: SingleJob
+  },
+  {
+    path: '/search',
+    name: 'SearchJob',
+    component: SearchJob
+  },
+  {
     path: '/Single',
     name: 'Single',
     component: SingleProfile
@@ -47,6 +60,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
   }
 ]
 
@@ -54,6 +72,18 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  const publicPages = ['/', '/login', '/register', '/developer', '/jobs']
+  const authRequired = !publicPages.includes(to.path)
+  const loggedIn = localStorage.getItem('user')
+
+  if (authRequired && !loggedIn) {
+    return next('/login')
+  }
+
+  next()
 })
 
 export default router

@@ -12,6 +12,7 @@
       :title="job.title"
       :tags="job.tags"
       :company_logo="job.company_logo"
+      :id="job.id"
     />
   </div>
 </template>

@@ -4,6 +4,9 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import './assets/tailwind.css'
+import { configureFakeBackend } from './_helpers'
+
+configureFakeBackend()
 
 Vue.config.productionTip = false
 

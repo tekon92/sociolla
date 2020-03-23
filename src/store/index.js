@@ -1,9 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import { alert } from './alert.module'
+import { authentication } from './authentication.module'
+import { users } from './users.module'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  modules: {
+    alert,
+    authentication,
+    users
+  },
   state: {
     profiles: [
       {
@@ -51,6 +59,76 @@ export default new Vuex.Store({
         exp: 3,
         salary: 50000,
         hours: 40
+      },
+      {
+        id: 3,
+        title: 'iOS Developer',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
+        date_posted: '2020-03-20',
+        tags: ['remote', 'work', 'js'],
+        skills: ['js', 'frontend', 'backend'],
+        company: 'Apple',
+        company_logo: 'https://randomuser.me/api/portraits/women/44.jpg',
+        exp: 3,
+        salary: 50000,
+        hours: 40
+      },
+      {
+        id: 4,
+        title: 'iOS Developer',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
+        date_posted: '2020-03-20',
+        tags: ['remote', 'work', 'js'],
+        skills: ['js', 'frontend', 'backend'],
+        company: 'Apple',
+        company_logo: 'https://randomuser.me/api/portraits/women/44.jpg',
+        exp: 3,
+        salary: 50000,
+        hours: 40
+      },
+      {
+        id: 5,
+        title: 'iOS Developer',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
+        date_posted: '2020-03-20',
+        tags: ['remote', 'work', 'js'],
+        skills: ['js', 'frontend', 'backend'],
+        company: 'Apple',
+        company_logo: 'https://randomuser.me/api/portraits/women/44.jpg',
+        exp: 3,
+        salary: 50000,
+        hours: 40
+      },
+      {
+        id: 6,
+        title: 'iOS Developer',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
+        date_posted: '2020-03-20',
+        tags: ['remote', 'work', 'js'],
+        skills: ['js', 'frontend', 'backend'],
+        company: 'Apple',
+        company_logo: 'https://randomuser.me/api/portraits/women/44.jpg',
+        exp: 3,
+        salary: 50000,
+        hours: 40
+      },
+      {
+        id: 7,
+        title: 'iOS Developer',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias illo expedita vel deleniti. Commodi laudantium ut minima ratione. Magnam dignissimos recusandae, laboriosam aliquam dolore possimus perspiciatis mollitia voluptate nisi.',
+        date_posted: '2020-03-20',
+        tags: ['remote', 'work', 'js'],
+        skills: ['js', 'frontend', 'backend'],
+        company: 'Apple',
+        company_logo: 'https://randomuser.me/api/portraits/women/44.jpg',
+        exp: 3,
+        salary: 50000,
+        hours: 40
       }
     ]
   },
@@ -62,10 +140,6 @@ export default new Vuex.Store({
       return state.jobs
     }
   },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+  mutations: {},
+  actions: {}
 })

@@ -1,10 +1,10 @@
 <template>
   <li class="flex-1 md:flex-none md:mr-3">
     <div class="relative inline-block">
-      <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none">
+      <button @click="myDd" class="text-white bg-indigo-700 font-semibold py-2 px-4 rounded inline-flex items-center">
         <span class="pr-2">
           <i class="em em-robot_face"></i>
-        </span> Hi, User
+        </span> Hi, {{ user.firstName }}
         <svg
           class="h-3 fill-current inline"
           xmlns="http://www.w3.org/2000/svg"
@@ -15,34 +15,19 @@
       </button>
       <div
         id="myDropdown"
-        class="dropdownlist absolute bg-teal-500 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible"
+        class="dropdownlist absolute bg-indigo-500 text-white right-0 mt-3 p-3 overflow-auto z-30"
+        :class="dd"
       >
-        <input
-          type="text"
-          class="drop-search p-2 text-teal-600"
-          placeholder="Search.."
-          id="myInput"
-          onkeyup="filterDD('myDropdown','myInput')"
-        />
-        <a
-          href="#"
-          class="p-2 hover:bg-teal-800 text-white text-sm no-underline hover:no-underline block"
-        >
-          <i class="fa fa-user fa-fw"></i> Profile
-        </a>
-        <a
-          href="#"
-          class="p-2 hover:bg-teal-800 text-white text-sm no-underline hover:no-underline block"
-        >
-          <i class="fa fa-cog fa-fw"></i> Settings
-        </a>
-        <div class="border border-teal-800"></div>
-        <a
-          href="#"
-          class="p-2 hover:bg-teal-800 text-white text-sm no-underline hover:no-underline block"
-        >
-          <i class="fas fa-sign-out-alt fa-fw"></i> Log Out
-        </a>
+        <router-link class="p-2 hover:bg-indigo-800 text-white text-sm no-underline hover:no-underline block" to="/dashboard">
+          <i class="fa fa-user fa-fw"></i> Dashboard
+        </router-link>
+        <router-link class="p-2 hover:bg-indigo-800 text-white text-sm no-underline hover:no-underline block" to="/dashboard">
+          <i class="fa fa-user fa-fw"></i> Settings
+        </router-link>
+        <div class="border border-indigo-800"></div>
+        <router-link class="p-2 hover:bg-indigo-800 text-white text-sm no-underline hover:no-underline block" to="/login">
+          <i class="fa fa-user fa-fw"></i> Logout
+        </router-link>
       </div>
     </div>
   </li>
@@ -50,9 +35,29 @@
 
 <script>
 export default {
-  name: 'DropdownLink'
+  name: 'DropdownLink',
+  data () {
+    return {
+      dd: 'invisible'
+    }
+  },
+  computed: {
+    user () {
+      return this.$store.state.authentication.user
+    }
+  },
+  methods: {
+    myDd () {
+      if (this.dd === '') {
+        this.dd = 'invisible'
+      } else {
+        this.dd = ''
+      }
+    }
+  }
 }
 </script>
 
-<style>
+<style scoped>
+
 </style>

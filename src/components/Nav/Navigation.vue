@@ -5,7 +5,7 @@
     <!-- END Logo text or image -->
 
     <!-- Search field -->
-    <search-bar />
+    <!-- <search-bar /> -->
     <!-- END Search field -->
 
     <!-- Global navigation -->
@@ -16,14 +16,14 @@
 
 <script>
 import MainNav from '@/components/Nav/MainNav'
-import SearchBar from '@/components/Nav/SearchBar'
+// import SearchBar from '@/components/Nav/SearchBar'
 import Logo from '@/components/Nav/Logo'
 
 export default {
   name: 'Navigation',
   components: {
     MainNav,
-    SearchBar,
+    // SearchBar,
     Logo
   }
 }
