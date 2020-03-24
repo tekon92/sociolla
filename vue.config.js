@@ -9,7 +9,8 @@ module.exports = {
       // mutate config for production...
       config.resolve.alias.set(
         'api-client',
-        path.resolve(__dirname, 'src/api/server/index.js')
+        // path.resolve(__dirname, 'src/api/server/index.js')
+        path.resolve(__dirname, 'src/api/mock/index.js')
       )
     } else {
       // mutate for development...
