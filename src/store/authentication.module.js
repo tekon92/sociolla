@@ -1,4 +1,4 @@
-import { userService } from '../_services'
+import { userServices } from '../_services'
 import router from '../router' // need to find better woraround
 
 const user = JSON.parse(localStorage.getItem('user'))
@@ -13,7 +13,7 @@ export const authentication = {
     login ({ dispatch, commit }, { username, password }) {
       commit('loginRequest', { username })
 
-      userService.login(username, password).then(
+      userServices.login(username, password).then(
         user => {
           commit('loginSuccess', user)
           router.push('/')
@@ -25,7 +25,7 @@ export const authentication = {
       )
     },
     logout ({ commit }) {
-      userService.logout()
+      userServices.logout()
       commit('logout')
     }
   },

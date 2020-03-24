@@ -28,7 +28,7 @@
       <!-- <a
         href="/"
         class="hover:underline text-indigo-500 font-bold"
-      >See more business & Management Jobs</a> -->
+      >See more business & Management Jobs</a>-->
     </div>
 
     <!-- next  -->
@@ -36,11 +36,11 @@
     <div class="md:flex bg-white rounded-lg p-6 bg-gray-200 mb-2">
       <img
         class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
-        src="https://randomuser.me/api/portraits/women/44.jpg"
+        :src="jobs.company_logo"
       />
       <div class="text-center md:text-left w-full">
-        <h1 class="text-lg font-bold">Product Store for Apple in Los Angeles</h1>
-        <div class="text-gray-600">Apple</div>
+        <h1 class="text-lg font-bold">{{ jobs.title }}</h1>
+        <div class="text-gray-600">{{ jobs.company }}</div>
         <div class="flex justify-between items-center">
           <button
             class="bg-indigo-500 hover:bg-indigo-700 text-sm text-white font-thin py-2 px-4 rounded-md mt-3"
@@ -89,12 +89,12 @@
       <div class="md:flex justify-between">
         <div class="py-2 text-center">
           <h3 class="text-gray-500">EXPERIENCE</h3>
-          <div class="text-gray-900 font-bold">3 - 5 Years</div>
+          <div class="text-gray-900 font-bold">{{ jobs.exp }} Years</div>
         </div>
 
         <div class="py-2 text-center">
           <h3 class="text-gray-500">SALARY</h3>
-          <div class="text-gray-900 font-bold">$20,000 to $100.000 yearly</div>
+          <div class="text-gray-900 font-bold">${{ jobs.salary }} yearly</div>
         </div>
 
         <div class="py-2 text-center">
@@ -112,26 +112,13 @@
         <a
           class="py-1 px-2 bg-gray-600 text-gray-100 text-sm rounded hover:bg-gray-500 ml-2 mt-2 inline sm:flex-col"
           href="#"
-        >Javascript</a>
-
-        <a
-          class="py-1 px-2 bg-gray-600 text-gray-100 text-sm rounded hover:bg-gray-500 ml-2 mt-2 inline sm:flex-col"
-          href="#"
-        >SQL</a>
-
-        <a
-          class="py-1 px-2 bg-gray-600 text-gray-100 text-sm rounded hover:bg-gray-500 ml-2 mt-2 inline sm:flex-col"
-          href="#"
-        >React</a>
-
-        <a
-          class="py-1 px-2 bg-gray-600 text-gray-100 text-sm rounded hover:bg-gray-500 ml-2 mt-2 inline sm:flex-col"
-          href="#"
-        >Frontend</a>
-        <a
+          v-for="skill in jobs.skills"
+          :key="skill.id"
+        >{{ skill }}</a>
+        <!-- <a
           class="py-1 px-2 bg-blue-300 text-white text-sm rounded hover:bg-indigo-500 ml-2 mt-2 inline sm:flex-col"
           href="#"
-        >Remote</a>
+        >Remote</a>-->
       </div>
     </div>
 
@@ -169,9 +156,29 @@
 <script>
 export default {
   name: 'SingleJob',
+  data () {
+    return {
+      jobs: ''
+    }
+  },
+  computed: {},
   methods: {
     goBack () {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+    },
+    getSingleJob () {
+      this.jobs = this.$store.getters.jobsById(this.currentRoute())
+    },
+    currentRoute () {
+      return Number(this.$route.params.id)
+    }
+  },
+  created () {
+    if (this.jobs.length > 0) {
+      this.getSingleJob(this.currentRoute)
+    } else {
+      this.$store.dispatch('fetchJobs')
+      this.getSingleJob(this.currentRoute)
     }
   }
 }

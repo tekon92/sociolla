@@ -5,7 +5,7 @@ const config = {
   apiUrl: 'http://localhost:4000'
 }
 
-export const userService = {
+export const userServices = {
   login,
   logout,
   getAll

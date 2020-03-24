@@ -30,7 +30,11 @@ export default {
   computed: {
     jobs () {
       return this.$store.getters.jobs
+      // return this.$store.state.jobs
     }
+  },
+  created () {
+    this.$store.dispatch('fetchJobs')
   }
 }
 </script>
