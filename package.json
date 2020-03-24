@@ -5,7 +5,7 @@
   "scripts": {
     "serve:mock": "vue-cli-service serve --mode mock-api",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --mode mock-api",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
