@@ -52,11 +52,11 @@ export default {
       return Number(this.$route.params.id)
     }
   },
-  created () {
+  async created () {
     if (this.jobs.length > 0) {
       this.getSingleJob(this.currentRoute)
     } else {
-      this.$store.dispatch('fetchJobs')
+      await this.$store.dispatch('fetchJobs')
       this.getSingleJob(this.currentRoute)
     }
   }

@@ -4,16 +4,16 @@ import { alert } from './alert.module'
 import { authentication } from './authentication.module'
 import { users } from './users.module'
 import client from 'api-client'
-import createPersistedState from 'vuex-persistedstate'
+// import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  plugins: [
-    createPersistedState({
-      paths: ['jobs']
-    })
-  ],
+  // plugins: [
+  //   createPersistedState({
+  //     paths: ['jobs']
+  //   })
+  // ],
   modules: {
     alert,
     authentication,

@@ -7,7 +7,6 @@ import Developer from '../views/ProfileAll'
 import SingleProfile from '../views/SingleProfile'
 import Jobs from '../views/Jobs'
 import Dashboard from '../views/Dashboard'
-import SingleJob from '../views/SingleJob'
 import SearchJob from '../views/SearchJob'
 
 Vue.use(VueRouter)
@@ -41,7 +40,8 @@ const routes = [
   {
     path: '/jobs/:id',
     name: 'SingleJob',
-    component: SingleJob
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/SingleJob.vue')
   },
   {
     path: '/search',
