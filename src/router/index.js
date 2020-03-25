@@ -8,6 +8,7 @@ import SingleProfile from '../views/SingleProfile'
 import Jobs from '../views/Jobs'
 import Dashboard from '../views/Dashboard'
 import SearchJob from '../views/SearchJob'
+import Error from '../views/Error.vue'
 
 Vue.use(VueRouter)
 
@@ -66,6 +67,11 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard
+  },
+  {
+    path: '*',
+    name: 'error',
+    component: Error
   }
 ]
 
