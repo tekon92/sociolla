@@ -15,7 +15,7 @@
 
     <!-- description -->
 
-    <job-description />
+    <job-description :role_desc="jobs.role_desc" :job_desc="jobs.job_desc" :exp_desc="jobs.exp_desc" />
   </div>
 </template>
 

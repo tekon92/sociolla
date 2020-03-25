@@ -12,13 +12,17 @@
         "skills": [
             "js",
             "frontend",
-            "backend"
+            "backend",
+            "remote"
         ],
         "company": "google.com",
         "company_logo": "https://randomuser.me/api/portraits/women/44.jpg",
         "exp": 3,
         "salary": 50000,
-        "hours": 40
+        "hours": 40,
+        "role_desc": "<p>Oddball believes that the best products are built when teams understand and value the things they are working on. We value learning and growth and the ability to make a big impact at a small company. We believe that we can make big changes happen and improve the daily lives of millions of people by bringing quality software to the federal space.</p> <p>We are looking for an experienced Program Manager to oversee and build a major program and initiative within the Federal space.</p><p>You can expect top-of-the-market pay, flexible hours, and a balanced work week.</p>",
+        "job_desc": "<p>Working hand in hand with our engineering, leadership and government partners to oversee all things pertinent to the successful implementation and delivery of a major government initiative. You’ll work on everything from financial oversight, personnel management, delivery timelines, internal and external documentation, client relations, etc., to ensure the delivery, scope and quality of the entire program is on schedule and running effectively and efficiently.</p>",
+        "exp_desc": "<ul class='list-disc px-5'><li>Personnel Management: Experience staffing, growing and leading successful and driven teams</li><li>Client facing experience: Extensive client and vendor interaction with a history of satisfied customers and long term relationships</li><li>Systems Management: Ability organize and bring together technology, people, venders, management, etc. to tackle complex and multi-level business problems</li><li>Implementation: Ability to implement both short and long term strategic initiatives to meet, maintain and exceed goals</li><li>Financial management: Extensive finance expertise, experience with large-budget oversight, the ability to forecast revenue, and make impactful, data-driven decisions based on findings</li><li>Technical competency: Ability to interface, understand, and oversee technical teams and projects</li></ul>"
     },
     {
         "id": 2,
@@ -39,7 +43,10 @@
         "company_logo": "https://randomuser.me/api/portraits/women/44.jpg",
         "exp": 3,
         "salary": 50000,
-        "hours": 40
+        "hours": 40,
+        "role_desc": "<p>Oddball believes that the best products are built when teams understand and value the things they are working on. We value learning and growth and the ability to make a big impact at a small company. We believe that we can make big changes happen and improve the daily lives of millions of people by bringing quality software to the federal space.</p> <p>We are looking for an experienced Program Manager to oversee and build a major program and initiative within the Federal space.</p><p>You can expect top-of-the-market pay, flexible hours, and a balanced work week.</p>",
+        "job_desc": "<p>Working hand in hand with our engineering, leadership and government partners to oversee all things pertinent to the successful implementation and delivery of a major government initiative. You’ll work on everything from financial oversight, personnel management, delivery timelines, internal and external documentation, client relations, etc., to ensure the delivery, scope and quality of the entire program is on schedule and running effectively and efficiently.</p>",
+        "exp_desc": "<ul class='list-disc px-5'><li>Personnel Management: Experience staffing, growing and leading successful and driven teams</li><li>Client facing experience: Extensive client and vendor interaction with a history of satisfied customers and long term relationships</li><li>Systems Management: Ability organize and bring together technology, people, venders, management, etc. to tackle complex and multi-level business problems</li><li>Implementation: Ability to implement both short and long term strategic initiatives to meet, maintain and exceed goals</li><li>Financial management: Extensive finance expertise, experience with large-budget oversight, the ability to forecast revenue, and make impactful, data-driven decisions based on findings</li><li>Technical competency: Ability to interface, understand, and oversee technical teams and projects</li></ul>"
     },
     {
         "id": 3,
@@ -60,7 +67,10 @@
         "company_logo": "https://randomuser.me/api/portraits/women/44.jpg",
         "exp": 3,
         "salary": 50000,
-        "hours": 40
+        "hours": 40,
+        "role_desc": "<p>Oddball believes that the best products are built when teams understand and value the things they are working on. We value learning and growth and the ability to make a big impact at a small company. We believe that we can make big changes happen and improve the daily lives of millions of people by bringing quality software to the federal space.</p> <p>We are looking for an experienced Program Manager to oversee and build a major program and initiative within the Federal space.</p><p>You can expect top-of-the-market pay, flexible hours, and a balanced work week.</p>",
+        "job_desc": "<p>Working hand in hand with our engineering, leadership and government partners to oversee all things pertinent to the successful implementation and delivery of a major government initiative. You’ll work on everything from financial oversight, personnel management, delivery timelines, internal and external documentation, client relations, etc., to ensure the delivery, scope and quality of the entire program is on schedule and running effectively and efficiently.</p>",
+        "exp_desc": "<ul class='list-disc px-5'><li>Personnel Management: Experience staffing, growing and leading successful and driven teams</li><li>Client facing experience: Extensive client and vendor interaction with a history of satisfied customers and long term relationships</li><li>Systems Management: Ability organize and bring together technology, people, venders, management, etc. to tackle complex and multi-level business problems</li><li>Implementation: Ability to implement both short and long term strategic initiatives to meet, maintain and exceed goals</li><li>Financial management: Extensive finance expertise, experience with large-budget oversight, the ability to forecast revenue, and make impactful, data-driven decisions based on findings</li><li>Technical competency: Ability to interface, understand, and oversee technical teams and projects</li></ul>"
     },
     {
         "id": 4,
@@ -81,7 +91,10 @@
         "company_logo": "https://randomuser.me/api/portraits/women/44.jpg",
         "exp": 3,
         "salary": 50000,
-        "hours": 40
+        "hours": 40,
+        "role_desc": "<p>Oddball believes that the best products are built when teams understand and value the things they are working on. We value learning and growth and the ability to make a big impact at a small company. We believe that we can make big changes happen and improve the daily lives of millions of people by bringing quality software to the federal space.</p> <p>We are looking for an experienced Program Manager to oversee and build a major program and initiative within the Federal space.</p><p>You can expect top-of-the-market pay, flexible hours, and a balanced work week.</p>",
+        "job_desc": "<p>Working hand in hand with our engineering, leadership and government partners to oversee all things pertinent to the successful implementation and delivery of a major government initiative. You’ll work on everything from financial oversight, personnel management, delivery timelines, internal and external documentation, client relations, etc., to ensure the delivery, scope and quality of the entire program is on schedule and running effectively and efficiently.</p>",
+        "exp_desc": "<ul class='list-disc px-5'><li>Personnel Management: Experience staffing, growing and leading successful and driven teams</li><li>Client facing experience: Extensive client and vendor interaction with a history of satisfied customers and long term relationships</li><li>Systems Management: Ability organize and bring together technology, people, venders, management, etc. to tackle complex and multi-level business problems</li><li>Implementation: Ability to implement both short and long term strategic initiatives to meet, maintain and exceed goals</li><li>Financial management: Extensive finance expertise, experience with large-budget oversight, the ability to forecast revenue, and make impactful, data-driven decisions based on findings</li><li>Technical competency: Ability to interface, understand, and oversee technical teams and projects</li></ul>"
     },
     {
         "id": 5,
@@ -102,7 +115,10 @@
         "company_logo": "https://randomuser.me/api/portraits/women/44.jpg",
         "exp": 6,
         "salary": 50000,
-        "hours": 40
+        "hours": 40,
+        "role_desc": "<p>Oddball believes that the best products are built when teams understand and value the things they are working on. We value learning and growth and the ability to make a big impact at a small company. We believe that we can make big changes happen and improve the daily lives of millions of people by bringing quality software to the federal space.</p> <p>We are looking for an experienced Program Manager to oversee and build a major program and initiative within the Federal space.</p><p>You can expect top-of-the-market pay, flexible hours, and a balanced work week.</p>",
+        "job_desc": "<p>Working hand in hand with our engineering, leadership and government partners to oversee all things pertinent to the successful implementation and delivery of a major government initiative. You’ll work on everything from financial oversight, personnel management, delivery timelines, internal and external documentation, client relations, etc., to ensure the delivery, scope and quality of the entire program is on schedule and running effectively and efficiently.</p>",
+        "exp_desc": "<ul class='list-disc px-5'><li>Personnel Management: Experience staffing, growing and leading successful and driven teams</li><li>Client facing experience: Extensive client and vendor interaction with a history of satisfied customers and long term relationships</li><li>Systems Management: Ability organize and bring together technology, people, venders, management, etc. to tackle complex and multi-level business problems</li><li>Implementation: Ability to implement both short and long term strategic initiatives to meet, maintain and exceed goals</li><li>Financial management: Extensive finance expertise, experience with large-budget oversight, the ability to forecast revenue, and make impactful, data-driven decisions based on findings</li><li>Technical competency: Ability to interface, understand, and oversee technical teams and projects</li></ul>"
     },
     {
         "id": 7,
@@ -123,6 +139,9 @@
         "company_logo": "https://randomuser.me/api/portraits/women/44.jpg",
         "exp": 3,
         "salary": 50000,
-        "hours": 40
+        "hours": 40,
+        "role_desc": "<p>Oddball believes that the best products are built when teams understand and value the things they are working on. We value learning and growth and the ability to make a big impact at a small company. We believe that we can make big changes happen and improve the daily lives of millions of people by bringing quality software to the federal space.</p> <p>We are looking for an experienced Program Manager to oversee and build a major program and initiative within the Federal space.</p><p>You can expect top-of-the-market pay, flexible hours, and a balanced work week.</p>",
+        "job_desc": "<p>Working hand in hand with our engineering, leadership and government partners to oversee all things pertinent to the successful implementation and delivery of a major government initiative. You’ll work on everything from financial oversight, personnel management, delivery timelines, internal and external documentation, client relations, etc., to ensure the delivery, scope and quality of the entire program is on schedule and running effectively and efficiently.</p>",
+        "exp_desc": "<ul class='list-disc px-5'><li>Personnel Management: Experience staffing, growing and leading successful and driven teams</li><li>Client facing experience: Extensive client and vendor interaction with a history of satisfied customers and long term relationships</li><li>Systems Management: Ability organize and bring together technology, people, venders, management, etc. to tackle complex and multi-level business problems</li><li>Implementation: Ability to implement both short and long term strategic initiatives to meet, maintain and exceed goals</li><li>Financial management: Extensive finance expertise, experience with large-budget oversight, the ability to forecast revenue, and make impactful, data-driven decisions based on findings</li><li>Technical competency: Ability to interface, understand, and oversee technical teams and projects</li></ul>"
     }
 ]
