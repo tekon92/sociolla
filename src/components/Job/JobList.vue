@@ -52,7 +52,7 @@ export default {
     company: String,
     title: String,
     tags: Array,
-    id: Number
+    id: String
   }
 }
 </script>

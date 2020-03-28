@@ -10,7 +10,7 @@
     <div class="bg-gray-200 p-6">
       <job-details :exp="jobs.exp" :salary="jobs.salary" />
 
-      <job-tags :tags="jobs.skills" />
+      <job-tags :tags="jobs.tags" />
     </div>
 
     <!-- description -->
