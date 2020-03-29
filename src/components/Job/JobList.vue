@@ -1,7 +1,12 @@
 <template>
   <div class="flex-grow flex px-6 py-6 text-grey-darker items-center mb-3 justify-between bg-gray-200 shadow-xs">
     <div class="w-4/6 flex items-center">
-      <img :src="company_logo" class="w-16 h-16 object-cover rounded object-top" />
+      <div class="w-16 h-16 object-cover rounded object-top">
+        <img :src="company_logo" v-if="company_logo" />
+        <div v-else class="w-full h-full flex items-center justify-center bg-blue-300 font-bold">
+        {{ coInitials }}
+      </div>
+      </div>
       <div class="flex flex-col pl-4">
         <h1 class="font-medium">{{ company }}</h1>
         <h3 class="text-gray-500 text-sm">{{ title }}</h3>
@@ -61,6 +66,11 @@ export default {
       const currDate = new Date(new Date().toISOString().slice(0, 10))
       const diffTime = Math.abs(currDate - jobDate)
       return Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    }
+  },
+  computed: {
+    coInitials () {
+      return this.company.slice(0, 2).toUpperCase()
     }
   }
 }

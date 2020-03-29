@@ -3,7 +3,11 @@
     <img
       class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
       :src="company_logo"
+      v-if="company_logo.length > 0"
     />
+    <div v-else class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6">
+      RP
+    </div>
     <div class="text-center md:text-left w-full">
       <h1 class="text-lg font-bold">{{ title }}</h1>
       <div class="text-gray-600">{{ company }}</div>

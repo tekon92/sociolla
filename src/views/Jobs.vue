@@ -9,7 +9,7 @@
       v-for="job in jobs"
       :key="job.id"
       :company="job.company"
-      :title="job.title"
+      :title="job.position"
       :tags="job.tags"
       :company_logo="job.company_logo"
       :id="job.id"
