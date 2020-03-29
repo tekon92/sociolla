@@ -38,7 +38,7 @@
 
     <div class="w-/6 flex items-center">
       <div class="flex flex-col px-4 text-right">
-        <p class="font-semibold text-sm text-gray-900">10d</p>
+        <p class="font-semibold text-sm text-gray-900">{{ howManyDays(curr_date) }}d</p>
       </div>
     </div>
   </div>
@@ -52,7 +52,16 @@ export default {
     company: String,
     title: String,
     tags: Array,
-    id: String
+    id: String,
+    curr_date: String
+  },
+  methods: {
+    howManyDays (dd) {
+      const jobDate = new Date(dd.slice(0, 10))
+      const currDate = new Date(new Date().toISOString().slice(0, 10))
+      const diffTime = Math.abs(currDate - jobDate)
+      return Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    }
   }
 }
 </script>

@@ -13,9 +13,16 @@
       <job-tags :tags="jobs.tags" />
     </div>
 
-    <!-- description -->
-
-    <job-description :role_desc="jobs.role_desc" :job_desc="jobs.job_desc" :exp_desc="jobs.exp_desc" />
+    <job-description>
+      <h3 class="font-bold my-5" v-if="jobs.role_desc">Role Overview</h3>
+      <div v-html="jobs.role_desc"></div>
+      <h3 class="font-bold my-5" v-if="jobs.job_desc">What you'll be doing</h3>
+      <div v-html="jobs.job_desc"></div>
+      <h3 class="font-bold my-5" v-if="jobs.exp_desc">We are looking for someone with the following experience:</h3>
+      <div v-html="jobs.exp_desc"></div>
+      <h3 class="font-bold my-5">Description:</h3>
+      <div v-html="jobs.description"></div>
+    </job-description>
   </div>
 </template>
 
@@ -49,7 +56,8 @@ export default {
       this.jobs = this.$store.getters.jobsById(this.currentRoute())
     },
     currentRoute () {
-      return Number(this.$route.params.id)
+      // return Number(this.$route.params.id)
+      return this.$route.params.id
     }
   },
   async created () {

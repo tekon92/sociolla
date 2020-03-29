@@ -13,6 +13,7 @@
       :tags="job.tags"
       :company_logo="job.company_logo"
       :id="job.id"
+      :curr_date="job.date"
     />
   </div>
 </template>
