@@ -1,5 +1,5 @@
 <template>
-  <div class="w-9/12">
+  <div class="md:w-9/12 w-full">
     <div class="block text-center pb-20">
       <p class="font-rubik font-medium text-center text-primary-color uppercase">Get a remote job</p>
       <h2 class="font-black text-primary-grey uppercase pb-8 text-3xl">You can do anywhere</h2>

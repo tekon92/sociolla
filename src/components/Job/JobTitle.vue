@@ -3,7 +3,7 @@
     <img
       class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
       :src="company_logo"
-      v-if="company_logo.length > 0"
+      v-if="company_logo"
     />
     <div v-else class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6">
       RP
@@ -14,7 +14,7 @@
       <div class="flex justify-between items-center">
         <button
           class="bg-indigo-500 hover:bg-indigo-700 text-sm text-white font-thin py-2 px-4 rounded-md mt-3"
-        >Apply Now</button>
+        ><a :href="url" target="_blank">Apply Now</a></button>
         <div class="text-white">
           <button
             class="bg-indigo-500 hover:bg-indigo-700 text-sm text-white font-thin py-2 px-2 rounded-md mr-2"
@@ -60,7 +60,8 @@ export default {
   props: {
     title: String,
     company_logo: String,
-    company: String
+    company: String,
+    url: String
   }
 }
 </script>

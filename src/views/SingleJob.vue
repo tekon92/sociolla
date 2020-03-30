@@ -4,7 +4,12 @@
     <job-header @goBack="goBack" />
     <!-- ttle -->
 
-    <job-title :company_logo="jobs.company_logo" :title="jobs.title" :company="jobs.company" />
+    <job-title
+      :company_logo="jobs.company_logo"
+      :title="jobs.title"
+      :company="jobs.company"
+      :url="jobs.url"
+    />
 
     <!-- details -->
     <div class="bg-gray-200 p-6">
